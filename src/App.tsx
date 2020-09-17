@@ -1,25 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Layout, Menu, Typography } from 'antd';
+
+const { Header, Content, Footer } = Layout;
+const { Text } = Typography;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Layout className='homepage_first_layout'>
+        <Menu className='homepage_first_layout_menu' mode="horizontal">
+          <Text style={{position: 'absolute', right: '5vw'}}>Launching <Text strong>Q1 2021</Text></Text>
+        </Menu>
+        <div className='homepage_skew'/>
+      </Layout>
+      <Footer className='homepage_footer'>© Gitraffe</Footer>
+    </Layout>
   );
 }
 
