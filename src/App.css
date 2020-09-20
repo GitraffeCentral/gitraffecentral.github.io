@@ -14,21 +14,24 @@
   --magic-number: 0.09719;
   --skew-padding: calc(var(--width) * var(--magic-number));
   --clip-padding: calc(var(--full-width) * var(--magic-number));
-  --gradient-start: #fffb7d;
-  --gradient-end: #85ffbd;
+  --gradient-start: #cd632f;
+  --gradient-mid-1: #873816;
+  --gradient-mid-2: #60150a;
+  --gradient-end: #da2622;
 }
 
-.homepage_first_content{
-  height: 100vh;
-  width: 100vw;
+.homepage_first_layout{
+  width: 100%;
+  height: 90vh;
   background: white;
   position: relative;
+  overflow: hidden;
 }
 
-.homepage_skew{
-  width: 100vw;
-  height: 90vh;
-  background: linear-gradient(225deg, var(--gradient-start), var(--gradient-end));
+.homepage_gradient_skew{
+  width: 100%;
+  height: 75vh;
+  background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
   -webkit-animation: BackgroundGradient 10s ease infinite;
   -moz-animation: BackgroundGradient 10s ease infinite;
   -o-animation: BackgroundGradient 10s ease infinite;
@@ -36,15 +39,15 @@
   position: absolute;
   overflow:hidden;
   background-size: 400% 400%;
-  z-index: 1;
 }
 
-.homepage_skew::before{
+.homepage_gradient_skew::before{
   content:'';
   position:absolute;
   background: white;
   top:0; right:0;
   width:100%; height:100%;
+  overflow: hidden;
 
   -webkit-transform-origin:100% 100%;
   -ms-transform-origin:100% 100%;
@@ -55,11 +58,9 @@
   transform:skew(-80deg, 0);
 }
 
-.homepage_first_layout_menu{
-  background: transparent;
-  color: white;
-  z-index: 2;
-  border: 0;
+.homepage_header{
+  background:transparent;
+  color: black;
 }
 
 .homepage_footer{
