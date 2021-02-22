@@ -1,5 +1,4 @@
-.application_footer {
-  background: white;
-  text-align: right;
-  color: black;
+.application_layout {
+  width: 100vw;
+  height: 100vh;
 }
