@@ -1,10 +1,12 @@
 import React from "react";
 import { Layout, Typography, Row } from "antd";
+import {AppleFilled, WindowsFilled } from "@ant-design/icons";
+import { FaUbuntu } from "react-icons/fa";
 import "./index.css";
 import InteractiveRebaseMac from "../../resources/interactive-rebase-mac.png";
 
-const { Content } = Layout;
-const { Title, Paragraph } = Typography;
+const { Content, Footer } = Layout;
+const { Title, Paragraph, Text } = Typography;
 
 const Home = () => {
   return (
@@ -12,7 +14,7 @@ const Home = () => {
       style={{
         background: "#1f1f1f",
         width: "100%",
-        height: "100%",
+        minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
       }}
@@ -35,19 +37,35 @@ const Home = () => {
       >
         <div style={{ color: "white", fontSize: "2vh", textAlign: "center" }}>
           <strong>Gitraffe</strong> helps you leverage the power of Git through
-          a minimal and intuitive interface.
+          a beautiful and intuitive interface.
           <br />
-          Minimize hiccups with Interactive Rebase, Cherry Picking, Reflog,
+          Minimize Git hiccups with Interactive Rebase, Cherry Picking, Reflog,
           Commit + History Editing, Quick Actions, and Tailored Workspaces.
+          <br />
+          <br/>
+          Available on Windows, Mac, and Linux.
         </div>
       </Row>
       <Row
         align="middle"
         justify="center"
-        style={{ width: "100", flex: "1 1" }}
+        style={{ width: "100", flex: "1 1", marginTop: "5vh", marginBottom: "5vh" }}
       >
-        <img src={InteractiveRebaseMac} width="50%" />
+        <img src={InteractiveRebaseMac} width="60%" style={{filter: "drop-shadow(0 0 1rem #2a2a2a)"}}/>
       </Row>
+
+      <Footer style={{
+        background: "#1f1f1f",
+        width: "100%",
+      }}>
+              <Row
+        align="middle"
+        justify="center"
+        style={{ width: "100%", flex: "0 0 auto" }}
+      >
+        <Title level={5} style={{color: "white", fontWeight: "normal"}}>Team Raffe, 2021</Title>
+      </Row>
+      </Footer>
     </div>
   );
 };
