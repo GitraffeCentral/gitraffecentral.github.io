@@ -4,12 +4,15 @@ import {AppleFilled, WindowsFilled } from "@ant-design/icons";
 import { FaUbuntu } from "react-icons/fa";
 import "./index.css";
 import InteractiveRebaseMac from "../../resources/interactive-rebase-mac.png";
+import Header from "../../components/header";
 
 const { Content, Footer } = Layout;
 const { Title, Paragraph, Text } = Typography;
 
 const Home = () => {
   return (
+    <div>
+       <Header />
     <div
       style={{
         background: "#1f1f1f",
@@ -66,6 +69,7 @@ const Home = () => {
         <Title level={5} style={{color: "white", fontWeight: "normal"}}>Team Raffe, 2021</Title>
       </Row>
       </Footer>
+    </div>
     </div>
   );
 };

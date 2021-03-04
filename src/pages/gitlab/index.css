@@ -1,0 +1,13 @@
+.buttons{
+    margin: 20px 10px 20px 10px;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    padding: 12px 20px 12px 20px;
+  }
+a.flatbutt{
+    background: #e26c3d;
+    border-radius: 3px;
+    color: #eee;
+    font-size: 90%;
+}
