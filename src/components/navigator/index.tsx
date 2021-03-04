@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch as RouterSwitch } from "react-router-dom";
+import { HashRouter, Route, Switch as RouterSwitch } from "react-router-dom";
 import Home from "../../pages/home";
 import Bitbucket from "../../pages/bitbucket"
 import Gitlab from "../../pages/gitlab"
@@ -7,7 +7,7 @@ import Gitlab from "../../pages/gitlab"
 const Navigator = () => {
 
     return (
-        <BrowserRouter>
+        <HashRouter>
             <RouterSwitch>
                 <Route exact path="/">
                     <Home />
@@ -19,7 +19,7 @@ const Navigator = () => {
                     <Gitlab />
                 </Route>
             </RouterSwitch>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
