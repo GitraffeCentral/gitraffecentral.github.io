@@ -35,17 +35,7 @@ const Home = () => {
     return (
       <div style={{ background: "white", width: "100%" }}>
         <Header />
-        <div
-          style={{
-            //background: "#1f1f1f",
-            width: "100%",
-            maxWidth: "100%",
-            minHeight: "100vh",
-            display: "flex",
-            flexDirection: "column",
-            padding: "0px 24px 24px 24px",
-          }}
-        >
+        <div className="home_cards-container">
           <div
             style={{
               display: "flex",
@@ -54,7 +44,11 @@ const Home = () => {
           >
             <Portal
               color="orange"
-              style={{ flex: "1.25 1", minWidth: "400px" }}
+              style={{
+                flex: "1.25 1",
+                minWidth: "min(400px, calc(100% - 36px))",
+                boxSizing: "border-box",
+              }}
               title="gitraffe"
               slogan="Aspirin for Version Control."
               description="A beautiful and completely free Git client"
@@ -62,7 +56,11 @@ const Home = () => {
 
             <Portal
               color="magenta"
-              style={{ flex: "1 1", minWidth: "400px" }}
+              style={{
+                flex: "1 1",
+                minWidth: "min(400px, calc(100% - 36px))",
+                boxSizing: "border-box",
+              }}
               slogan="Our private beta has started!"
               description="Simply fill out a form to request access, and we will be in touch."
               textExtra={

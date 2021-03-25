@@ -2,3 +2,24 @@
   border-radius: 24px;
   font-weight: 600;
 }
+
+@media screen and (max-width: 500px) {
+  .home_cards-container {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .home_cards-container {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 24px 24px 24px;
+  }
+}
