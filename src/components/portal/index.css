@@ -1,0 +1,15 @@
+.portal-orange {
+  background: var(--brand-orange);
+}
+
+.portal-magenta {
+  background: var(--brand-magenta);
+}
+
+.portal-red {
+  background: var(--brand-red);
+}
+
+.portal-black {
+  background: var(--brand-background-color);
+}

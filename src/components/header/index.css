@@ -1,13 +1,13 @@
 .header_root {
-    padding:  12px 24px;
-    /*box-shadow: 0 2px 8px #f0f1f2;*/
-    background-color: #1f1f1f;
+  padding: 4px 24px;
+  /*box-shadow: 0 2px 8px #f0f1f2;*/
+  background-color: white;
 }
 
 .header_release-date {
-    font-weight: 800;
-    display: flex;
-    height: 100%;
-    align-items: center;
-    font-size: 16px;
+  font-weight: 800;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  font-size: 16px;
 }
