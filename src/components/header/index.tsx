@@ -21,18 +21,6 @@ const Header = () => {
             rel="noopener noreferrer"
             href="https://x836on4k62z.typeform.com/to/KGopr4aR"
           >
-            <Button
-              type="primary"
-              shape="round"
-              size={"large"}
-              style={{
-                background: "linear-gradient(45deg, #ee0979, #ff6a00)",
-                borderWidth: "0",
-                verticalAlign: "middle",
-              }}
-            >
-              Request Access <ArrowRightOutlined />
-            </Button>
           </a>
         </div>
       }

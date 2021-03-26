@@ -18,6 +18,9 @@ import Raffy from "../../resources/raffy.svg";
 import Portal from "../../components/portal";
 import CommitFilesPic from "../../resources/commit-files.png";
 import CherryPickPic from "../../resources/cherry-pick.png";
+import gitlab from "./gitlab.svg";
+import github from "./github.svg";
+import bitbucket from "./bitbucket.svg";
 
 const { Content, Footer } = Layout;
 const { Title, Paragraph, Text } = Typography;
@@ -43,19 +46,19 @@ const Home = () => {
             }}
           >
             <Portal
-              color="orange"
+              color="blue"
               style={{
                 flex: "1.25 1",
                 minWidth: "min(400px, calc(100% - 36px))",
                 boxSizing: "border-box",
               }}
-              title="gitraffe"
-              slogan="Aspirin for Version Control."
-              description="A beautiful and completely free Git client"
+              title="Gitraffe"
+              slogan="Supercharge Programmer Productivity"
+              description="Available on Windows, Mac, and Linux."
             />
 
             <Portal
-              color="magenta"
+              color="black"
               style={{
                 flex: "1 1",
                 minWidth: "min(400px, calc(100% - 36px))",
@@ -70,9 +73,18 @@ const Home = () => {
                     rel="noopener noreferrer"
                     href="https://x836on4k62z.typeform.com/to/KGopr4aR"
                   >
-                    <Button className="gitraffe-button" size="large">
-                      Request Access <ArrowRightOutlined />
-                    </Button>
+                                <Button
+                                type="primary"
+                                shape="round"
+                                size={"large"}
+                                style={{
+                                  background: "linear-gradient(45deg, #ee0979, #ff6a00)",
+                                  borderWidth: "0",
+                                  verticalAlign: "middle",
+                                }}
+            >
+              Request Access <ArrowRightOutlined />
+            </Button>
                   </a>
                 </div>
               }
@@ -80,7 +92,7 @@ const Home = () => {
           </div>
 
           <Portal
-            color="red"
+            color="magenta"
             title="Commit Changes"
             slogan="Just select the files to commit and describe your changes."
             description="Not ready to commit? Stash all changes with one click."
@@ -88,65 +100,57 @@ const Home = () => {
           />
 
           <Portal
-            color="black"
-            imageFirst
+            color="green"
             imageSrc={Raffy}
-            noImageStyle
-            imageStyle={{ height: "128px" }}
-            slogan="Meet raffy, your personal Git assistant."
-            description="Here to guide you while you are using Git commands."
-            textMargin="0px 0px 0px 24px"
+            imageFirst
+            imageStyle={{height: "40vh"}}
+            title="Productivity Assistant"
+            slogan="Meet Raffy, your personal Git assistant."
+            description="Raffy guides you through operations, understands what you're trying to perform, and helps you perform Quick Actions."
           />
 
           <Portal
-            color="magenta"
+            color="yellow"
             imageSrc={InteractiveRebaseMac}
             imageFirst
             title="Interactive Rebase"
             slogan="The power to change commit history, at your fingertips."
-            description="Easily change previous commit messages, squash commits,fixup commits, and re-order commits."
+            description="Easily change previous commit messages, squash commits, fixup commits, and re-order commits."
           />
 
           <Portal
-            color="orange"
-            slogan="There is no limit to how many accounts you can connect to Gitraffe."
+            color="purple"
+            title={
+              <Row align="middle" justify="center" style={{color: "rgba(255, 255, 255, 0.8)"}}>
+                Integrations
+              </Row>
+            }
+            slogan={
+              <Row align="middle" justify="center">
+                There is no limit to how many accounts you can connect to Gitraffe.
+              </Row>
+            }
             description={
-              <div>
-                Connect your <GithubFilled />,{" "}
-                <FaBitbucket style={{ position: "relative", top: "3px" }} /> and{" "}
-                <GitlabFilled /> accounts. Or just use your name and email.
-                Gitraffe is free for both personal and professional use.
-              </div>
+              <Row align="middle" justify="center">
+                Gitraffe supports some of the most popular Git Hosting Services.
+              </Row>
+            }
+            textExtra = {
+              <Row align = "middle" justify="center">
+                <a href="https://www.gitlab.com"><img src={gitlab} style={{height: "8vh",margin: "5vw"}}/></a>
+                <a href="https://www.github.com"><img src={github} style={{height: "8vh", margin: "5vw"}}/></a>
+                <a href="https://www.bitbucket.com"><img src={bitbucket} style={{height: "8vh", margin: "5vw"}}/></a>
+              </Row>
             }
           />
 
           <Portal
-            color="red"
+            color="blue"
             imageSrc={CherryPickPic}
             title="Cherry Pick"
             slogan="Accidentally committed to the wrong branch?"
             description="Don't worry, you can quickly copy commits from one branch to another."
           />
-
-          {/*<Row
-            align="middle"
-            justify="center"
-            style={{ width: "100%", flex: "0 0 auto" }}
-          >
-            <div
-              style={{ color: "white", fontSize: "2vh", textAlign: "center" }}
-            >
-              <strong>Gitraffe</strong> helps you leverage the power of Git
-              through a beautiful and intuitive interface.
-              <br />
-              Minimize Git hiccups with Interactive Rebase, Cherry Picking,
-              Reflog, Commit + History Editing, Quick Actions, and Tailored
-              Workspaces.
-              <br />
-              <br />
-              Available on Windows, Mac, and Linux.
-            </div>
-          </Row>*/}
 
           <Footer
             style={{
@@ -163,7 +167,7 @@ const Home = () => {
               <div
                 style={{ color: "white", fontSize: "16px", fontWeight: 550 }}
               >
-                Created by Team Raffe 2020-2021
+                Team Raffe&nbsp; © 2021
               </div>
             </Row>
           </Footer>

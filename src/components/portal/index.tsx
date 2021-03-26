@@ -2,13 +2,13 @@ import React, { CSSProperties } from "react";
 import "./index.css";
 
 type PortalProps = {
-  color: "orange" | "magenta" | "red" | "black";
+  color: "purple" | "magenta" | "blue" | "black" | "yellow" | "green";
   children?: JSX.Element | React.ReactNode;
   style?: CSSProperties;
   imageSrc?: string;
   imageFirst?: boolean;
-  title?: string;
-  slogan?: string;
+  title?: string | JSX.Element;
+  slogan?: string | JSX.Element;
   description?: string | JSX.Element;
   imageStyle?: CSSProperties;
   noImageStyle?: boolean;
@@ -34,7 +34,7 @@ const PortalImage = (props: PortalProps) => (
 );
 
 const TextOnly = (props: PortalProps) => (
-  <div style={{ color: "black", fontSize: "18px" }}>
+  <div style={{ color: "white", fontSize: "18px" }}>
     {props.title && (
       <div style={{ fontSize: "28px", fontWeight: 650 }}>{props.title}</div>
     )}

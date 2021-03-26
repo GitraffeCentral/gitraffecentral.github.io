@@ -1,15 +1,23 @@
-.portal-orange {
-  background: var(--brand-orange);
+.portal-purple {
+  background: linear-gradient(to bottom right, #6B4DD7, #9D14B1);
 }
 
 .portal-magenta {
-  background: var(--brand-magenta);
+  background: linear-gradient(to bottom right, #E70676, #BE423D);
 }
 
-.portal-red {
-  background: var(--brand-red);
+.portal-blue {
+  background: linear-gradient(315deg, #06bcfb 0%, #4884ee 74%);
 }
 
 .portal-black {
-  background: var(--brand-background-color);
+  background: linear-gradient(315deg, #130f40 0%, #000000 74%);
+}
+
+.portal-green {
+  background: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+}
+
+.portal-yellow {
+  background: linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);
 }
