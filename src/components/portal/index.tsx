@@ -27,6 +27,7 @@ const PortalImage = (props: PortalProps) => (
             maxWidth: "100%",
             minWidth: "min(400px, 100%)",
             flex: "2 1",
+            borderRadius: "10px",
             ...props.imageStyle,
           }
     }

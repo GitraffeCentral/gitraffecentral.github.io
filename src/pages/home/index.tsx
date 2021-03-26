@@ -54,7 +54,7 @@ const Home = () => {
               }}
               title="Gitraffe"
               slogan="Supercharge Programmer Productivity"
-              description="Available on Windows, Mac, and Linux."
+              description="Free Git GUI Client with a focus on clarity. Available on Windows, Mac, and Linux."
             />
 
             <Portal
