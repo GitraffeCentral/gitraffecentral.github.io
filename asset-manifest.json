@@ -1,30 +1,33 @@
 {
   "files": {
-    "main.css": "./static/css/main.4e166ec8.chunk.css",
-    "main.js": "./static/js/main.82e84d4d.chunk.js",
-    "main.js.map": "./static/js/main.82e84d4d.chunk.js.map",
+    "main.css": "./static/css/main.29392323.chunk.css",
+    "main.js": "./static/js/main.e63712d9.chunk.js",
+    "main.js.map": "./static/js/main.e63712d9.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.218341dc.js",
     "runtime-main.js.map": "./static/js/runtime-main.218341dc.js.map",
     "static/css/2.99a5358a.chunk.css": "./static/css/2.99a5358a.chunk.css",
-    "static/js/2.97dc31fb.chunk.js": "./static/js/2.97dc31fb.chunk.js",
-    "static/js/2.97dc31fb.chunk.js.map": "./static/js/2.97dc31fb.chunk.js.map",
+    "static/js/2.c5d05aec.chunk.js": "./static/js/2.c5d05aec.chunk.js",
+    "static/js/2.c5d05aec.chunk.js.map": "./static/js/2.c5d05aec.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.048b7782fc556c803127200878ed3e1a.js": "./precache-manifest.048b7782fc556c803127200878ed3e1a.js",
+    "precache-manifest.da625ff154023a04fcf8aef64c0a8c4f.js": "./precache-manifest.da625ff154023a04fcf8aef64c0a8c4f.js",
     "service-worker.js": "./service-worker.js",
     "static/css/2.99a5358a.chunk.css.map": "./static/css/2.99a5358a.chunk.css.map",
-    "static/css/main.4e166ec8.chunk.css.map": "./static/css/main.4e166ec8.chunk.css.map",
-    "static/js/2.97dc31fb.chunk.js.LICENSE.txt": "./static/js/2.97dc31fb.chunk.js.LICENSE.txt",
+    "static/css/main.29392323.chunk.css.map": "./static/css/main.29392323.chunk.css.map",
+    "static/js/2.c5d05aec.chunk.js.LICENSE.txt": "./static/js/2.c5d05aec.chunk.js.LICENSE.txt",
+    "static/media/bitbucket.svg": "./static/media/bitbucket.9c517cee.svg",
     "static/media/cherry-pick.png": "./static/media/cherry-pick.a401bb45.png",
     "static/media/commit-files.png": "./static/media/commit-files.23b2bdf0.png",
+    "static/media/github.svg": "./static/media/github.ce89173e.svg",
+    "static/media/gitlab.svg": "./static/media/gitlab.523d5e81.svg",
     "static/media/interactive-rebase-mac.png": "./static/media/interactive-rebase-mac.a1a29c2a.png",
     "static/media/logo.png": "./static/media/logo.3bdd78b9.png",
-    "static/media/raffy.svg": "./static/media/raffy.88288197.svg"
+    "static/media/raffy.svg": "./static/media/raffy.1a138a48.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.218341dc.js",
     "static/css/2.99a5358a.chunk.css",
-    "static/js/2.97dc31fb.chunk.js",
-    "static/css/main.4e166ec8.chunk.css",
-    "static/js/main.82e84d4d.chunk.js"
+    "static/js/2.c5d05aec.chunk.js",
+    "static/css/main.29392323.chunk.css",
+    "static/js/main.e63712d9.chunk.js"
   ]
 }
